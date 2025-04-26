@@ -18,5 +18,10 @@ public class Author {
     public String getFullName() {
         return this.name + " " + this.surname;
     }
+
+    @Override
+    public String toString() {
+        return name + surname;
+    }
 }
 
