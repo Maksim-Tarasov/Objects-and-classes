@@ -1,21 +1,22 @@
 public class Author {
-    private String author;
+    private final String name;
+    private final String surname;
 
-    public Author(String author) {
-        this.author = author;
+    public Author(String name, String surname) {
+        this.name = name;
+        this.surname = surname;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public String getName() {
+        return name;
     }
 
-    public String getAuthor() {
-        return author;
+    public String getSurname() {
+        return surname;
     }
 
-    @Override
-    public String toString() {
-        return author;
+    public String getFullName() {
+        return this.name + " " + this.surname;
     }
 }
 

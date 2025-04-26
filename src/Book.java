@@ -12,7 +12,9 @@ public class Book {
     public void setYear(int year) {
         if (year >= 0) {
             this.year = year;
-        } else System.out.println("error");
+        } else {
+            System.out.println("error");
+        }
     }
 
     public void setTitle(String title) {
@@ -23,7 +25,7 @@ public class Book {
         return this.year;
     }
 
-    String getTitle() {
+    public String getTitle() {
         return this.title;
     }
 
